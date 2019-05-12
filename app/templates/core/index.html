@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block app_content %}
+    <h2>Hi {{ current_user.username }}!</h2>
+    {% if form %}
+    <div class="form-group row">
+        <div class="col-sm-12">
+            {{ wtf.quick_form(form) }}
+        </div>
+    </div>
+    {% endif %}
+
+    {% for post in posts %}
+        {% include "core/post/_post.html" %}
+    {% endfor %}
+{% endblock %}
