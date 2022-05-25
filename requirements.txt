@@ -18,7 +18,7 @@ language-selector==0.1
 migrate==0.3.8
 mysql-connector==2.1.6
 pygobject==3.26.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 python-dotenv==0.10.1
 requests==2.21.0
 SQLAlchemy==1.2.17
